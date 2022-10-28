@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Account Again</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <h1 class="text-center font-bold text-3xl mt-8 mb-8 text-lime-400">Welcome to your Account</h1>
+    <section class="flex ml-48">
+        <div class="bg-green-300 rounded-lg mr-5 w-1/4 p-5 text-cyan-600">
+            <h1>Money Deposit</h1>
+            <p class="text-xl text-yellow-400">$ <span id="Deposit-money"
+                    class="text-red-600 text-2xl font-semibold">00</span></p>
+        </div>
+        <div class="bg-pink-300 mr-5 w-1/4 rounded-lg p-5 text-orange-600">
+            <h1>Money Withdraw</h1>
+            <p class="text-xl text-red-400">$ <span id="withdraw-money"
+                    class="text-red-600 text-2xl font-semibold">00</span></p>
+        </div>
+        <div class="bg-blue-300 w-1/4 p-5 rounded-lg text-purple-600">
+            <h1 class="text-lg font-semibold">Current Balance</h1>
+            <p class="text-xl text-yellow-400">$
+                <span id="balance" class="text-red-600 text-2xl font-semibold">1240</span>
+            </p>
+        </div>
+    </section>
+    <section class="ml-24 mt-16 mr-24 flex">
+        <div class="mt-5 bg-amber-200 rounded-lg w-1/2 p-5">
+            <h1 class="pb-4 font-semibold text-xl">Deposit your money </h1>
+            <input id="deposit-input" class="border-2  rounded w-3/4 p-1" type=" text"
+                placeholder="$ Money you deposit">
+            <br><button id="btn-deposit" class="mt-3 bg-blue-500 rounded p-2 w-24 hover:bg-blue-400">Deposit</button>
+        </div>
+        <div class="mt-5 ml-5 bg-amber-200 rounded-lg w-1/2 p-5">
+            <h1 class="pb-4 font-semibold text-xl">Deposit your money </h1>
+            <input id="input-withdraw" class="border-2 rounded w-3/4 p-1" type=" text"
+                placeholder="$ Money you deposit">
+            <br>
+            <button id="withdraw-btn" class=" mt-3 bg-orange-500 rounded p-2 w-24 hover:bg-orange-400">Withdraw</button>
+        </div>
+    </section>
+    <script src="utilities.js"></script>
+    <script src="account-deposit.js"></script>
+    <script src="account-withdraw.js"></script>
+</body>
+
+</html>
